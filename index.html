@@ -1,0 +1,89 @@
+<!DOCTYPE html5>
+
+<!-- copyright, Jason Herrmann, June 5th, 2015 -->
+
+<html>
+	<head>
+		<title>HackHarvard</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<!-- placeholder for future expandability -->
+			</nav>    
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="css/main.css">
+            
+            <script src="js/jquery-1.11.3.min.js"></script>
+		</header>
+            <div id="wrapper">
+                <div class="overlay">
+                    <section>
+                        <div id="logoWrapper">
+                            <img src="img/logo.png" alt="Harvard Hackathon">
+                        </div>
+                        <div id="contentWrapper">
+                            <div id="validationHeader" class="fadeIn is-paused"><h1>Please enter a<br>valid email.</h1></div>
+                            <div class="frontPageHeading">
+                                <h1 id="primaryHeading" class="frontPageHeading"><b>HACK</b>HARVARD</h1>
+                                <h3 id="secondaryHeading" class="frontPageHeading">NOVEMBER 2015 @ HARVARD</h3>
+                                <h2 id="tertiaryHeading" class="frontPageHeading">HACK. DESIGN. INNOVATE.<br>OPEN TO ALL UNDERGRADS.</h2>
+                            </div>   
+                            <form id="registration" name="registration" action="php/submit.php" method="post" onsubmit="return submitFunc();">
+                                <!-- a form for e-mail inputs -->
+                                <input required id="emailForm" type="text" size="30%" placeholder="EMAIL ADDRESS" name="email">                        
+                                <input type="submit" value="PREREGISTER" name="submit" id="buttonForm">
+                            </form>
+                        </div>
+                    </section>
+                    <footer>
+                        <p>INTERESTED IN SPONSORING? CONTACT SPONSORS@HACKHARVARD.IO</p>
+                    </footer>
+                </div>
+            </div>
+        
+    </body>
+
+    <script>
+        
+        function submitFunc() {
+            
+            var registration = document.forms["registration"];
+            var email = registration.elements["email"];
+            if(email.value !== "") {
+                
+                if(validateEmail(email.value) == true) {
+                   
+                    return true;
+                        
+                } else {
+             
+                    var nu = document.getElementById("validationHeader");
+                    if (nu.classList.contains('is-paused')) {
+                        document.getElementById("primaryHeading").style.opacity = 0;
+                        document.getElementById("secondaryHeading").style.opacity = 0;
+                        document.getElementById("tertiaryHeading").style.opacity = 0;
+
+                        nu.classList.remove('is-paused');
+                
+                    }
+                                    
+                }
+                
+                            return false;
+                
+            }
+            
+            return true;
+        };
+        
+        function validateEmail(email) {
+            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            return re.test(email);
+        }
+
+    </script>
+    
+</html>
