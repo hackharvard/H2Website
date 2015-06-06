@@ -9,7 +9,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    background: url("../img/background.png") center center no-repeat;
+    background: url("../img/pattern_720.png") center center no-repeat;
     text-align: center;
     background-size: cover;
     overflow: hidden;
@@ -25,6 +25,8 @@
     content: ' ';
     background-color: rgba(236, 240, 241, .55);
     z-index: 1;
+    
+    font-family: 'Muli', sans-serif;
 }
 
 #contentWrapper {
@@ -133,7 +135,7 @@ input {
     color: rgba(82, 89, 81, 1);
     padding: 5px;
     margin: 0;
-    font: Sans-Serif;
+
 }
 
 #primaryHeading {
