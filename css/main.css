@@ -9,7 +9,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    background: url("../img/pattern_720.png") center center no-repeat;
+    background: url("../img/background-gradient.png") center center no-repeat;
     text-align: center;
     background-size: cover;
     overflow: hidden;
@@ -25,8 +25,8 @@
     content: ' ';
     background-color: rgba(236, 240, 241, .55);
     z-index: 1;
-    
-    font-family: 'Muli', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 #contentWrapper {
@@ -113,6 +113,7 @@ input {
     width: 250px;
     height: 30px;
     padding: 0;
+    padding-left: 10px;
     color: #5F605E;
 }
 
@@ -142,18 +143,23 @@ input {
  
     margin-top: 2%;
     font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
 #secondaryHeading {
  
     margin: 2%;
+    margin-top: 0;
     font-size:  24px;
+    font-weight: 200;
 }
 
 #tertiaryHeading {
     
     font-size:  40px;
     margin-bottom: 50px;
+    font-weight: 300;
 }
 
 /* LOGO SECTION */
@@ -183,7 +189,10 @@ footer {
     color: rgba(82, 89, 81, 1);
     font-size: .8em;
     margin-top: 13%;
-    
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1%;
 }
 
 #responsePage {
