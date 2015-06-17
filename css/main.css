@@ -136,6 +136,7 @@ input {
     color: rgba(82, 89, 81, 1);
     padding: 5px;
     margin: 0;
+    text-transform: uppercase;
 
 }
 
@@ -192,7 +193,7 @@ footer {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 1%;
+    bottom: 2%;
 }
 
 #responsePage {

@@ -5,6 +5,17 @@
 <html>
 	<head>
 		<title>HackHarvard</title>
+        
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Official page of the Harvard hackathon">
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
+        <script src="js/jquery-1.11.3.min.js"></script>
 	</head>
 
 	<body>
@@ -12,13 +23,6 @@
 			<nav>
 				<!-- placeholder for future expandability -->
 			</nav>    
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-            <link rel="stylesheet" type="text/css" href="css/normalize.css">
-            <link rel="stylesheet" type="text/css" href="css/main.css">
-            <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-            <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
-            
-            <script src="js/jquery-1.11.3.min.js"></script>
 		</header>
             <div id="wrapper">
                 <div class="overlay">
@@ -29,9 +33,9 @@
                         <div id="contentWrapper">
                             <div id="validationHeader" class="fadeIn is-paused"><h1>Please enter a<br>valid email.</h1></div>
                             <div class="frontPageHeading">
-                                <p id="primaryHeading" class="frontPageHeading"><span style="font-weight: 700">HACK</span><span style="font-weight:300">HARVARD</span></p>
-                                <h3 id="secondaryHeading" class="frontPageHeading">NOVEMBER 2015 @ HARVARD</h3>
-                                <h2 id="tertiaryHeading" class="frontPageHeading">HACK. DESIGN. INNOVATE.<br>OPEN TO ALL UNDERGRADS.</h2>
+                                <h1 id="primaryHeading" class="frontPageHeading"><span style="font-weight: 700">Hack</span><span style="font-weight:300">Harvard</span></h1>
+                                <h3 id="secondaryHeading" class="frontPageHeading">November 2015 @ Harvard</h3>
+                                <h2 id="tertiaryHeading" class="frontPageHeading">Hack. Design. Innovate.<br>Open To All Undergrads.</h2>
                             </div>   
                             <form id="registration" name="registration" action="php/submit.php" method="post" onsubmit="return submitFunc();">
                                 <!-- a form for e-mail inputs -->
@@ -41,7 +45,7 @@
                         </div>
                     </section>
                     <footer>
-                        <p>INTERESTED IN SPONSORING? CONTACT SPONSORS@HACKHARVARD.IO</p>
+                        <p id="footerContact" class="frontPageHeading">Interested in sponsoring? Contact sponsors@hackharvard.org</p>
                     </footer>
                 </div>
             </div>
