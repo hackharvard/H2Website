@@ -3,442 +3,431 @@
 /* MAIN PAGE FORMATTING */
 
 #wrapper {
- 
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background: url("../img/background-gradient.png") center center no-repeat;
-    text-align: center;
-    background-size: cover;
-    overflow: hidden;
-    z-index: 0;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url("../img/background-gradient.png") center center no-repeat;
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .overlay {
- 
-    padding-top: 8%;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background-color: rgba(236, 240, 241, .55);
-    z-index: 1;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+
+  padding-top: 8%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+  background-color: rgba(236, 240, 241, .55);
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 #contentWrapper {
- 
-    position: relative;
-    max-width: 70%;
-    margin: 0;
-    margin-left: 30%;
-    
-    -moz-animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -moz-animation-name: headersEntrance;
-    -webkit-animation-name: headersEntrance;
-    animation-name: headersEntrance;
-    z-index: 4;
-    
+
+  position: relative;
+  max-width: 70%;
+  margin: 0;
+  margin-left: 30%;
+
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-name: headersEntrance;
+  -webkit-animation-name: headersEntrance;
+  animation-name: headersEntrance;
+  z-index: 4;
+
 }
 
 #centralHeaderCover {
 
-    position: absolute;
-    opacity: 1;
-    margin-left: 15%;
-    color: rgba(82, 89, 81, 1);
+  position: absolute;
+  opacity: 1;
+  margin-left: 15%;
+  color: rgba(82, 89, 81, 1);
 
-    font-size: 74px;
-    
+  font-size: 74px;
+
 }
 
 #centralHeaderError {
 
-    margin-left: -10%;
-    font-size: 64px;
-    
+  margin-left: -10%;
+  font-size: 64px;
+
 }
 
 #validationHeader {
-    
-    position: absolute;
-    z-index: 3;
-    opacity: 1;
-    margin-left: 21%;
-    font-size: 2.4em;
-    
-    color: rgba(82, 89, 81, 1);    
+
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  margin-left: 21%;
+  font-size: 2.4em;
+
+  color: rgba(82, 89, 81, 1);
 }
 
 #returnButton {
- 
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-    margin-left: 48%;
-    margin-top: 30%;
-    
-    color: rgba(82, 89, 81, 1);
-    
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  margin-left: 48%;
+  margin-top: 30%;
+
+  color: rgba(82, 89, 81, 1);
+
 }
 
 a {
- 
-    color: inherit;
-    
+
+  color: inherit;
+
 }
 
 a:visited {
- 
-    color: inherit;
-    
+
+  color: inherit;
+
 }
 
 /* FORM SECTION */
 
 input {
- 
-    line-height: normal;
-    font-size: .8em;
+
+  line-height: normal;
+  font-size: .8em;
 }
 
 #emailForm {
- 
-    width: 250px;
-    height: 30px;
-    padding: 0;
-    padding-left: 10px;
-    color: #5F605E;
+
+  width: 250px;
+  height: 30px;
+  padding: 0;
+  padding-left: 10px;
+  color: #5F605E;
 }
 
 #buttonForm {
-    
-    color: #FFFFFF;
-    width: 125px;
-    font-size: .8em;
-    height: 30px;
-    padding 0;
-    background: rgba(176, 38, 62, 1);
-    border: none;
-    padding: none;
+
+  color: #FFFFFF;
+  width: 125px;
+  font-size: .8em;
+  height: 30px;
+  padding: 0;
+  background: rgba(176, 38, 62, 1);
+  border: none;
 }
 
 /* HEADING SECTION */
 
 .frontPageHeading {
- 
-    color: rgba(82, 89, 81, 1);
-    padding: 5px;
-    margin: 0;
-    text-transform: uppercase;
+
+  color: rgba(82, 89, 81, 1);
+  padding: 5px;
+  margin: 0;
+  text-transform: uppercase;
 
 }
 
 #primaryHeading {
- 
-    margin-top: 2%;
-    font-size: 80px;
-    font-weight: 400;
-    letter-spacing: 5px;
+
+  margin-top: 2%;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 #secondaryHeading {
- 
-    margin: 2%;
-    margin-top: 0;
-    font-size:  24px;
-    font-weight: 200;
+
+  margin: 2%;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 #tertiaryHeading {
-    
-    font-size:  40px;
-    margin-bottom: 50px;
-    font-weight: 300;
+
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: 300;
 }
 
 /* LOGO SECTION */
 
 #logoWrapper {
-  
-    position: relative;
-    max-width: 30%;
-    height: auto;
-    margin-left: 0;
-    margin-top: -4%;
-    float: left;
-    z-index: 4;
-    
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -moz-animation-name: logoEntrance;
-    -webkit-animation-name: logoEntrance;
-    animation-name: logoEntrance;
+
+  position: relative;
+  max-width: 30%;
+  height: auto;
+  margin-left: 0;
+  margin-top: -4%;
+  float: left;
+  z-index: 4;
+
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -moz-animation-name: logoEntrance;
+  -webkit-animation-name: logoEntrance;
+  animation-name: logoEntrance;
 }
 
 /* FOOTER SECTION */
 
 footer {
- 
-    color: rgba(82, 89, 81, 1);
-    font-size: .8em;
-    margin-top: 13%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 2%;
+
+  color: rgba(82, 89, 81, 1);
+  font-size: .8em;
+  margin-top: 13%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 2%;
 }
 
 #responsePage {
- 
-    position: absolute;
-    margin-top: 30.1%;
-    margin-left: 31.85%;
 
+  position: absolute;
+  margin-top: 30.1%;
+  margin-left: 31.85%;
 
 }
-
 
 /* animation controllers */
 
 .fadeIn {
- 
-    -moz-animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -moz-animation-name: appear;
-    -webkit-animation-name: appear;
-    animation-name: appear;
-    
+
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-name: appear;
+  -webkit-animation-name: appear;
+  animation-name: appear;
+
 }
 
 .fadeOut {
- 
-    -moz-animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -moz-animation-name: disappear;
-    -webkit-animation-name: disappear;
-    animation-name: disappear;
-    
+
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-name: disappear;
+  -webkit-animation-name: disappear;
+  animation-name: disappear;
+
 }
 
 .is-paused {
- 
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    
+
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+
 }
-    
 
 /* animations! - heare, we will use the css3 keyframes approach to animate sliding */
 
 @keyframes headersEntrance {
- 
-    from {
-     
-        margin-left: 100%;
-        width: 400%;
-        
-    }
-    
-    to {
-     
-        margin-left: 30%;
-        width: 100%;
-        
-    }
-    
+
+  from {
+
+    margin-left: 100%;
+    width: 400%;
+
+  }
+
+  to {
+
+    margin-left: 30%;
+    width: 100%;
+
+  }
+
 }
 
 @-moz-keyframes headersEntrance {
- 
-    from {
-     
-        margin-left: 100%;
-        width: 400%;
-        
-    }
-    
-    to {
-     
-        margin-left: 30%;
-        width: 100%;
-        
-    }
-    
+
+  from {
+
+    margin-left: 100%;
+    width: 400%;
+
+  }
+
+  to {
+
+    margin-left: 30%;
+    width: 100%;
+
+  }
+
 }
 
 @-webkit-keyframes headersEntrance {
- 
-    from {
-     
-        margin-left: 100%;
-        width: 400%;
-        
-    }
-    
-    to {
-     
-        margin-left: 30%;
-        width: 100%;
-        
-    }
-    
+
+  from {
+
+    margin-left: 100%;
+    width: 400%;
+
+  }
+
+  to {
+
+    margin-left: 30%;
+    width: 100%;
+
+  }
+
 }
 
 @keyframes logoEntrance {
- 
-    from {
-     
-        opacity: 0;
-        margin-left: -50%;
-    
-        
-    }
-    
-    to {
-     
-        opacity: 100%;
-        margin-left: 0;
-    }
-    
+
+  from {
+    opacity: 0;
+    margin-left: -50%;
+
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+
 }
 
 @-moz-keyframes logoEntrance {
- 
-    from {
-     
-        opacity: 0; 
-        margin-left: -50%;
-    }
-    
-    to {
-     
-        opacity: 100%;
-        margin-left: 0%;
 
-        
-    }
-    
+  from {
+
+    opacity: 0;
+    margin-left: -50%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0;
+
+  }
+
 }
 
 @-webkit-keyframes logoEntrance {
- 
-    from {
-     
-        opacity: 0;
-        margin-left: -50%;
 
-    }
-    
-    to {
-     
-        opacity: 100%;
-        margin-left: 0%;
+  from {
 
-    }
-    
+    opacity: 0;
+    margin-left: -50%;
+
+  }
+
+  to {
+
+    opacity: 1;
+    margin-left: 0;
+
+  }
+
 }
 
 @keyframes disappear {
- 
-    from {
-     
-        opacity: 1;    
-        
-    }
-    
-    to {
-     
-        opacity: 0;
-    }
-    
+
+  from {
+
+    opacity: 1;
+
+  }
+
+  to {
+
+    opacity: 0;
+  }
+
 }
 
 @-moz-keyframes disappear {
- 
-    from {
-     
-        opacity: 1;
-    }
-    
-    to {
-     
-        opacity: 0;
 
-        
-    }
-    
+  from {
+
+    opacity: 1;
+  }
+
+  to {
+
+    opacity: 0;
+
+  }
+
 }
 
 @-webkit-keyframes disappear {
- 
-    from {
-     
-        opacity: 1;
 
-    }
-    
-    to {
-     
-        opacity: 0;
+  from {
 
-    }
-    
+    opacity: 1;
+
+  }
+
+  to {
+
+    opacity: 0;
+
+  }
+
 }
 
-
 @keyframes appear {
- 
-    from {
-     
-        opacity: 0;    
-        
-    }
-    
-    to {
-     
-        opacity: 100%;
-    }
-    
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+  }
+
 }
 
 @-moz-keyframes appear {
- 
-    from {
-     
-        opacity: 0; 
-    }
-    
-    to {
-     
-        opacity: 100%;
-        
-    }
-    
+
+  from {
+
+    opacity: 0;
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
 }
 
 @-webkit-keyframes appear {
- 
-    from {
-     
-        opacity: 0;
 
-    }
-    
-    to {
-     
-        opacity: 100%;
+  from {
 
-    }
-    
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
 }

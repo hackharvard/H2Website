@@ -4,97 +4,95 @@
 
 <html>
 <head>
-    <title>HackHarvard</title>
+  <title>HackHarvard</title>
 
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Official page of the Harvard hackathon">
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Official page of the Harvard hackathon">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
 </head>
 
 <body>
 <header>
-    <nav>
-        <!-- placeholder for future expandability -->
-    </nav>
+  <nav>
+    <!-- placeholder for future expandability -->
+  </nav>
 </header>
 <div id="wrapper">
-    <div class="overlay">
-        <section>
-            <div id="logoWrapper">
-                <img src="img/logo.png" alt="Harvard Hackathon">
-            </div>
-            <div id="contentWrapper">
-                <div id="validationHeader" class="fadeIn is-paused"><h1>Please enter a<br>valid email.</h1></div>
-                <div class="frontPageHeading">
-                    <h1 id="primaryHeading" class="frontPageHeading"><span style="font-weight: 700">Hack</span><span
-                            style="font-weight:300">Harvard</span></h1>
+  <div class="overlay">
+    <section>
+      <div id="logoWrapper">
+        <img src="img/logo.png" alt="Harvard Hackathon">
+      </div>
+      <div id="contentWrapper">
+        <div id="validationHeader" class="fadeIn is-paused"><h1>Please enter a<br>valid email.</h1></div>
+        <div class="frontPageHeading">
+          <h1 id="primaryHeading" class="frontPageHeading"><span style="font-weight: 700">Hack</span><span
+            style="font-weight:300">Harvard</span></h1>
 
-                    <h3 id="secondaryHeading" class="frontPageHeading">November 2015 @ Harvard</h3>
+          <h3 id="secondaryHeading" class="frontPageHeading">November 2015 @ Harvard</h3>
 
-                    <h2 id="tertiaryHeading" class="frontPageHeading">Hack. Design. Innovate.<br>Open To All Undergrads.
-                    </h2>
-                </div>
-                <form id="registration" name="registration" action="php/submit.php" method="post"
-                      onsubmit="return submitFunc();">
-                    <!-- a form for e-mail inputs -->
-                    <input required id="emailForm" type="text" size="30%" placeholder="EMAIL ADDRESS" name="email">
-                    <input type="submit" value="PREREGISTER" name="submit" id="buttonForm">
-                </form>
-            </div>
-        </section>
-        <footer>
-            <p id="footerContact" class="frontPageHeading">Interested in sponsoring? Contact
-                sponsors@hackharvard.org</p>
-        </footer>
-    </div>
+          <h2 id="tertiaryHeading" class="frontPageHeading">Hack. Design. Innovate.<br>Open To All Undergrads.
+          </h2>
+        </div>
+        <form id="registration" name="registration" action="php/submit.php" method="post"
+              onsubmit="return submitFunc();">
+          <!-- a form for e-mail inputs -->
+          <input required id="emailForm" type="text" size="30%" placeholder="EMAIL ADDRESS" name="email">
+          <input type="submit" value="PREREGISTER" name="submit" id="buttonForm">
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p id="footerContact" class="frontPageHeading">Interested in sponsoring? Contact
+        sponsors@hackharvard.org</p>
+    </footer>
+  </div>
 </div>
 
 </body>
 
 <script>
 
-    function submitFunc() {
+  function submitFunc() {
 
-        var registration = document.forms["registration"];
-        var email = registration.elements["email"];
-        if (email.value !== "") {
+    var registration = document.forms["registration"];
+    var email = registration.elements["email"];
+    if (email.value !== "") {
 
-            if (validateEmail(email.value) == true) {
+      if (validateEmail(email.value) == true) {
 
-                return true;
+        return true;
 
-            } else {
+      } else {
 
-                var nu = document.getElementById("validationHeader");
-                if (nu.classList.contains('is-paused')) {
-                    document.getElementById("primaryHeading").style.opacity = 0;
-                    document.getElementById("secondaryHeading").style.opacity = 0;
-                    document.getElementById("tertiaryHeading").style.opacity = 0;
+        var nu = document.getElementById("validationHeader");
+        if (nu.classList.contains('is-paused')) {
+          document.getElementById("primaryHeading").style.opacity = 0;
+          document.getElementById("secondaryHeading").style.opacity = 0;
+          document.getElementById("tertiaryHeading").style.opacity = 0;
 
-                    nu.classList.remove('is-paused');
-
-                }
-
-            }
-
-            return false;
+          nu.classList.remove('is-paused');
 
         }
 
-        return true;
-    }
-    ;
+      }
 
-    function validateEmail(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        return re.test(email);
+      return false;
+
     }
+
+    return true;
+  }
+  function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
 
 </script>
 
