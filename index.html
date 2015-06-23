@@ -40,12 +40,25 @@
           <h2 id="tertiaryHeading" class="frontPageHeading">Hack. Design. Innovate.<br>Open To All Undergrads.
           </h2>
         </div>
-        <form id="registration" name="registration" action="php/submit.php" method="post"
-              onsubmit="return submitFunc();">
-          <!-- a form for e-mail inputs -->
-          <input required id="emailForm" type="text" size="30%" placeholder="EMAIL ADDRESS" name="email">
-          <input type="submit" value="PREREGISTER" name="submit" id="buttonForm">
+
+        <form id="registration"
+              action="//hackharvard.us11.list-manage.com/subscribe/post?u=c583025da1175423ed1d36b11&amp;id=26d9147d6b"
+              method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Keep me Updated</h2>
+
+            <label style="display: none;" for="emailForm">Email Address </label>
+            <input id="emailForm" type="email" value="" name="EMAIL" class="required email"
+                   placeholder="Email Address">
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;">
+              <input type="text" name="b_c583025da1175423ed1d36b11_26d9147d6b" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="Subscribe" name="subscribe" id="buttonForm" class="button">
+          </div>
         </form>
+
       </div>
     </section>
     <footer>
@@ -56,44 +69,4 @@
 </div>
 
 </body>
-
-<script>
-
-  function submitFunc() {
-
-    var registration = document.forms["registration"];
-    var email = registration.elements["email"];
-    if (email.value !== "") {
-
-      if (validateEmail(email.value) == true) {
-
-        return true;
-
-      } else {
-
-        var nu = document.getElementById("validationHeader");
-        if (nu.classList.contains('is-paused')) {
-          document.getElementById("primaryHeading").style.opacity = 0;
-          document.getElementById("secondaryHeading").style.opacity = 0;
-          document.getElementById("tertiaryHeading").style.opacity = 0;
-
-          nu.classList.remove('is-paused');
-
-        }
-
-      }
-
-      return false;
-
-    }
-
-    return true;
-  }
-  function validateEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
-  }
-
-</script>
-
 </html>
