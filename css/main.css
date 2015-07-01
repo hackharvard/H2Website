@@ -107,7 +107,7 @@ input {
 /* HEADING SECTION */
 .frontPageHeading {
   color: rgba(82, 89, 81, 1);
-  padding: 5px;
+  padding-top: 5px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -121,7 +121,7 @@ input {
 
 #secondaryHeading {
   margin: 2%;
-  margin-top: 0;
+  margin-top: 15px;
   font-size: 24px;
   font-weight: 200;
 }
