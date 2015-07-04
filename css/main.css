@@ -1,5 +1,3 @@
-/* CSS Main - Copyright, Jason Herrmann, June 5th, 2015 */
-
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
@@ -26,13 +24,14 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .logo {
   max-width: 80%;
-  margin: 0 auto -6rem;
+  margin-left: -16%;
   -moz-animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -moz-animation-name: logoEntrance;
   -webkit-animation-name: logoEntrance;
   animation-name: logoEntrance;
+  transition: all 0.5s;
 }
 
 /* Content column */
@@ -41,37 +40,28 @@ body {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-name: headersEntrance;
-  -webkit-animation-name: headersEntrance;
-  animation-name: headersEntrance;
-}
-
-.hero .title {
-  margin: 0.2rem auto 0;
-  font-size: 7rem;
-  letter-spacing: 0.4rem;
-}
-
-.hero .small {
-  margin-top: -0.5rem;
-  font-size: 2rem;
-}
-
-.hero .date {
-  font-size: 3rem;
-  margin-top: 1.5rem;
-}
-
-.hero .tagline {
-  font-size: 4rem;
-  margin-bottom: 4rem;
+  float: right;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: appear;
+  -webkit-animation-name: appear;
+  animation-name: appear;
 }
 
 /* Signup
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.signup {
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: appear;
+  -webkit-animation-name: appear;
+  animation-name: appear;
+}
 
 .signup input {
   text-transform: uppercase;
@@ -79,109 +69,53 @@ body {
   font-size: 1.2rem;
 }
 
+.signup .form-textbox {
+  width: 25rem;
+}
+
 .signup .button {
-  color: #ccc;
-  background-color: #b0263e;
+  color: rgba(236, 240, 241, 1);
+  background-color: #d6314a;
   border: none;
   transition: all .3s;
 }
 
 .signup .button:hover {
-  color: #fff;
-  background-color: #d6314a;
-}
-
-/* Animation Controllers
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.fadeIn {
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-name: appear;
-  -webkit-animation-name: appear;
-  animation-name: appear;
-}
-
-.fadeOut {
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -moz-animation-name: disappear;
-  -webkit-animation-name: disappear;
-  animation-name: disappear;
-}
-
-.is-paused {
-  -moz-animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+  background-color: #b0263e;
 }
 
 /* Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@keyframes headersEntrance {
-  from {
-    margin-left: 100%;
-    width: 400%;
-  }
-  to {
-    margin-left: 30%;
-    width: 100%;
-  }
-}
-
-@-moz-keyframes headersEntrance {
-  from {
-    margin-left: 100%;
-    width: 400%;
-  }
-  to {
-    margin-left: 30%;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes headersEntrance {
-  from {
-    margin-left: 100%;
-    width: 400%;
-  }
-  to {
-    margin-left: 30%;
-    width: 100%;
-  }
-}
-
 @keyframes logoEntrance {
   from {
     opacity: 0;
-    margin-left: -50%;
+    margin-left: -100%;
   }
   to {
     opacity: 1;
-    margin-left: 0;
+    margin-left: -16%;
   }
 }
 
 @-moz-keyframes logoEntrance {
   from {
     opacity: 0;
-    margin-left: -50%;
+    margin-left: -100%;
   }
   to {
     opacity: 1;
-    margin-left: 0;
+    margin-left: -16%;
   }
 }
 
 @-webkit-keyframes logoEntrance {
   from {
     opacity: 0;
-    margin-left: -50%;
+    margin-left: -100%;
   }
   to {
     opacity: 1;
-    margin-left: 0;
+    margin-left: -16%;
   }
 }
 
@@ -250,20 +184,23 @@ body {
 
   .hero {
     padding-bottom: 12rem;
-    text-align: left;
-    height: 165px;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
   }
 
   .logo {
-    position: absolute;
-    top: -7rem;
-    left: -3rem;
+    /*position: absolute;*/
+    /*top: 7rem;*/
+    /*left: 3rem;*/
+    /*margin: 0 auto;*/
     max-height: 362px;
-    z-index: 3;
+    /*z-index: 3;*/
   }
 
-  .hero-heading {
-    font-size: 2.4rem;
+  .hero-title {
+    font-size: 3rem;
   }
 }
 
@@ -292,8 +229,8 @@ body {
   }
 
   .logo {
-    top: -14rem;
-    left: -1rem;
+    /*top: 12rem;*/
+    /*left: 8rem;*/
     max-height: 510px;
   }
 
@@ -309,15 +246,31 @@ body {
   }
 
   .hero {
-    padding: 22rem 0;
+    padding: 17rem 0;
   }
 
-  .hero-heading {
-    font-size: 3.0rem;
+  .hero-title {
+    margin: 0.2rem auto 0;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .hero-small {
+    margin-top: -0.5rem;
+    font-size: 2rem;
+  }
+
+  .hero-date {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
   }
 
   .logo {
-    top: -16rem;
     max-height: 615px;
   }
 }
