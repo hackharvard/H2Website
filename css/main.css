@@ -46,7 +46,6 @@ body {
 
 /* Content column */
 .hero .headings {
-  width: 70%;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -307,10 +306,9 @@ footer {
   }
 
   .hero .headings {
-
     margin-top: -10%;
     margin-right: -10%;
-
+    width: 70%;
   }
 
   .hero-heading {
