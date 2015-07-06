@@ -306,7 +306,7 @@ footer {
   }
 
   .title > span {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   .hero .headings {
@@ -345,6 +345,10 @@ footer {
 
   .hero {
     padding: 16rem 0 14rem;
+  }
+
+  .title > span {
+    font-size: 7rem;
   }
 
   .section-description {
