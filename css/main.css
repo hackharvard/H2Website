@@ -331,10 +331,8 @@ footer {
   }
 
   .headings {
-
     margin-top: -10%;
     margin-right: -10%;
-
   }
 
   .hero-heading {
@@ -364,6 +362,10 @@ footer {
   .signup {
     padding: 15rem 0 8rem;
   }
+
+  footer {
+    margin-top: 5rem;
+  }
 }
 
 /* Bigger than 1000 */
@@ -390,5 +392,9 @@ footer {
   .logo {
     top: -16rem;
     max-height: 615px;
+  }
+
+  footer {
+    margin-top: 25rem;
   }
 }
