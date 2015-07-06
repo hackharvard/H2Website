@@ -68,7 +68,7 @@ body {
 }
 
 .title > span {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 .title > span > span {
@@ -85,7 +85,7 @@ body {
 }
 
 .hero .tagline {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -305,6 +305,10 @@ footer {
     max-height: 362px;
   }
 
+  .title > span {
+    font-size: 7rem;
+  }
+
   .hero .headings {
     margin-top: -10%;
     margin-right: -10%;
@@ -313,6 +317,10 @@ footer {
 
   .hero-heading {
     font-size: 2.4rem;
+  }
+
+  .hero .tagline {
+    font-size: 3rem;
   }
 }
 
