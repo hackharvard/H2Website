@@ -47,8 +47,7 @@ body {
 /* Content column */
 .hero .headings {
   width: 70%;
-  margin-top: -10%;
-  margin-right: -10%;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -298,6 +297,13 @@ footer {
     max-height: 362px;
   }
 
+  .hero .headings {
+      
+    margin-top: -10%;
+    margin-right: -10%;
+  
+  }
+
   .hero-heading {
     font-size: 2.4rem;
   }
@@ -309,6 +315,13 @@ footer {
     height: 190px;
   }
 
+  .headings {
+    
+    margin-top: -10%;
+    margin-right: -10%;
+  
+  }    
+    
   .hero-heading {
     font-size: 2.6rem;
   }
@@ -344,6 +357,13 @@ footer {
     padding: 20rem 0 8rem;
   }
 
+  .headings {
+      
+    margin-top: -10%;
+    margin-right: -10%;
+  
+  }
+    
   .hero {
     padding: 22rem 0;
   }
