@@ -12,12 +12,12 @@ body {
 }
 
 .wrapper {
- 
+
   background-color: rgba(236, 240, 241, .55);
   position: relative;
 
   content: ' ';
-    
+
 }
 
 /* Sections
@@ -104,9 +104,9 @@ body {
 }
 
 .signup .form-textbox {
- 
-    min-width: 40%;
-    
+
+  min-width: 40%;
+
 }
 
 .signup .button {
@@ -123,11 +123,10 @@ body {
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-    
-    margin-top: 2%;
-    display: block;
+  margin-top: 2%;
+  display: block;
+  text-align: center;
 }
-
 
 /* Animation Controllers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
